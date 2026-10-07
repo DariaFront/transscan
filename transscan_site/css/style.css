@@ -1179,11 +1179,15 @@ button {
   }
 
   .hero__content {
-    padding-top: 50px;
+    padding-top: 20px;
   }
 
   .hero__title {
     font-size: clamp(28px, 5.5vw, 48px);
+  }
+
+  .eyebrow {
+    margin: 0 0 16px;
   }
 
   .manager-card__top {
@@ -1205,7 +1209,7 @@ button {
   }
 
   .section {
-    padding: 76px 0;
+    padding: 64px 0;
   }
 
   .section-heading {
