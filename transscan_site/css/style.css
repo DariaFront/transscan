@@ -1752,7 +1752,7 @@ button {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(1, 19, 49, 0.8);
+    background: rgba(1, 19, 49, 0.7);
   }
 
   .hero__visual img {
@@ -1853,5 +1853,38 @@ button {
 
   .none {
     display: none;
+  }
+}
+
+/* =========================================
+   Mobile Hero — уменьшенная фоновая фотография
+   ========================================= */
+
+@media (max-width: 720px) {
+
+  .hero__visual {
+    background: var(--color-blue-deep);
+  }
+
+  .hero__visual img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60%;
+
+    object-fit: cover;
+    object-position: 72% top;
+
+    -webkit-mask-image: linear-gradient(to bottom,
+        black 0%,
+        black 70%,
+        transparent 100%);
+
+    mask-image: linear-gradient(to bottom,
+        black 0%,
+        black 70%,
+        transparent 100%);
   }
 }
