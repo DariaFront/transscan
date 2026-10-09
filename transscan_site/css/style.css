@@ -1849,4 +1849,9 @@ button {
     justify-content: flex-start;
     padding-inline: 20px;
   }
+
+
+  .none {
+    display: none;
+  }
 }
