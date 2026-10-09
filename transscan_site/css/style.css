@@ -361,6 +361,7 @@ button {
   max-width: 720px;
   margin: 0 0 24px;
   font-size: clamp(44px, 4.2vw, 56px);
+  font-weight: 600;
   line-height: 1.02;
   letter-spacing: -0.03em;
 }
