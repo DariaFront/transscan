@@ -950,6 +950,7 @@ button {
 
   .hero__visual {
     left: 14%;
+    right: 0;
   }
 
   .services-grid {
@@ -1007,78 +1008,6 @@ button {
     padding: 8px;
   }
 
-  .hero {
-    min-height: auto;
-  }
-
-  .hero__container {
-    min-height: auto;
-  }
-
-  .hero__content {
-    width: 100%;
-    padding: 56px 0 52px;
-  }
-
-  .hero__content::after {
-    right: -404px;
-    background: RGBA(0, 20, 50, 0.6);
-  }
-
-  .hero__visual {
-    Left: -72px;
-  }
-
-  .hero {
-    background:
-      linear-gradient(115deg, transparent 0 78%, rgba(255, 138, 0, 0.92) 78% 83%, transparent 83%),
-      linear-gradient(115deg, transparent 0 88%, rgba(255, 138, 0, 0.72) 88% 93%, transparent 93%),
-      linear-gradient(135deg, var(--color-blue-deep), var(--color-blue));
-  }
-
-  .hero__title {
-    margin-bottom: 48px;
-    font-size: clamp(38px, 10vw, 54px);
-    line-height: 1.08;
-  }
-
-  .hero__text {
-    margin-bottom: 48px;
-    font-size: 17px;
-    line-height: 1.65;
-  }
-
-  .manager-card {
-    width: 100%;
-    padding: 18px;
-  }
-
-  .manager-card__top {
-    align-items: flex-start;
-  }
-
-  .manager-card__photo {
-    width: 64px;
-    height: 64px;
-    flex-basis: 64px;
-  }
-
-  .manager-card__name {
-    font-size: 18px;
-  }
-
-  .messengers {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-
-  .messenger {
-    min-width: 0;
-    padding: 12px 8px;
-    font-size: 14px;
-  }
-
   .section {
     padding: 72px 0;
   }
@@ -1109,7 +1038,6 @@ button {
 
   .service-card__image {
     min-height: 220px;
-    margin-bottom: 24px;
   }
 
   .service-card__image img {
@@ -1179,47 +1107,8 @@ button {
     font-size: 12px;
   }
 
-  .hero__content {
-    padding-top: 20px;
-  }
-
-  .hero__title {
-    font-size: clamp(28px, 5.5vw, 48px);
-  }
-
   .eyebrow {
     margin: 0 0 16px;
-  }
-
-  .manager-card {
-    max-width: 480px;
-    padding: 0px;
-    background: RGBA(255, 255, 255, 0);
-  }
-
-  .manager-card__top {
-    gap: 12px;
-  }
-
-  .manager-card__role {
-    font-size: 16px;
-    margin: 0;
-    color: var(--color-white);
-  }
-
-  .manager-card__phone {
-    font-size: 24px;
-    color: var(--color-white);
-  }
-
-  .messengers {
-    grid-template-columns: 1fr;
-  }
-
-  .messenger {
-    min-height: 50px;
-    justify-content: flex-start;
-    padding-inline: 20px;
   }
 
   .section {
@@ -1399,7 +1288,7 @@ button {
 }
 
 
-/* Tablet */
+/* Contacts: Tablet */
 
 @media (max-width: 900px) {
 
@@ -1419,7 +1308,7 @@ button {
 }
 
 
-/* Mobile */
+/* Contacts: Mobile */
 
 @media (max-width: 480px) {
 
@@ -1445,8 +1334,7 @@ button {
 
 
 /* =====================================================
-   Service modal — модальное окно с описанием услуг
-   (дописано в конец, использует существующие переменные)
+   Service modal
    ===================================================== */
 
 .service-card__link {
@@ -1503,9 +1391,7 @@ button {
 
   padding: 56px;
 
-  background: linear-gradient(135deg,
-      var(--color-light-blue),
-      #ffffff);
+  color: #ffffff;
 }
 
 .service-modal__media img {
@@ -1729,11 +1615,11 @@ button {
   .service-modal__media {
     min-height: auto;
 
-    padding: 42px 40px 24px;
+    padding: 0;
   }
 
   .service-modal__media img {
-    max-height: 260px;
+    max-height: 200px;
   }
 
   .service-modal__content {
@@ -1765,12 +1651,9 @@ button {
     border-radius: 16px;
   }
 
-  .service-modal__media {
-    padding: 34px 24px 16px;
-  }
 
   .service-modal__media img {
-    max-height: 210px;
+    max-height: 180px;
   }
 
   .service-modal__content {
@@ -1821,122 +1704,148 @@ button {
 
 
 /* =====================================================
-   Mobile hero parallax
-   (дописано в конец, использует существующие переменные)
+   Mobile hero — один синий слой поверх картинки
+   Прозрачность 0.7
    ===================================================== */
 
 @media (max-width: 720px) {
   .hero {
-    position: relative;
-
-    min-height: 100svh;
-
-    background: var(--color-blue-deep);
-  }
-
-  .hero__visual {
-    display: block;
-
-    position: absolute;
-    inset: 0;
-
-    z-index: 0;
-
-    overflow: hidden;
-  }
-
-  .hero__visual img {
-    position: absolute;
-
-    top: -8%;
-    left: 0;
-
-    width: 100%;
-    height: 116%;
-    max-width: none;
-
-    object-fit: cover;
-    object-position: 68% center;
-
-    transform:
-      translate3d(0,
-        var(--hero-parallax-y, 0px),
-        0) scale(1.04);
-
-    will-change: transform;
-  }
-
-  .hero__visual::after {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
+    min-height: auto;
     background:
-      linear-gradient(90deg,
-        rgba(5, 39, 92, 0.98) 0%,
-        rgba(5, 39, 92, 0.93) 36%,
-        rgba(5, 39, 92, 0.72) 58%,
-        rgba(5, 39, 92, 0.35) 78%,
-        rgba(5, 39, 92, 0.12) 100%),
-      linear-gradient(0deg,
-        rgba(5, 39, 92, 0.72) 0%,
-        transparent 35%);
+      linear-gradient(115deg,
+        transparent 0 78%,
+        rgba(255, 138, 0, 0.92) 78% 83%,
+        transparent 83%),
+      linear-gradient(115deg,
+        transparent 0 88%,
+        rgba(255, 138, 0, 0.72) 88% 93%,
+        transparent 93%),
+      linear-gradient(135deg, var(--color-blue-deep), var(--color-blue));
   }
 
   .hero__container {
-    position: relative;
-
-    z-index: 2;
+    min-height: auto;
   }
 
   .hero__content {
-    position: relative;
-
-    z-index: 3;
-
     width: 100%;
-
-    padding-top: 54px;
-    padding-bottom: 72px;
+    padding: 56px 0 52px;
   }
 
   .hero__content::after {
     display: none;
   }
 
-  .hero__title,
+  .hero__visual {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -72px;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  /* ОДИН синий слой поверх картинки, прозрачность 0.7 */
+  .hero__visual::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(1, 19, 49, 0.8);
+  }
+
+  .hero__visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 68% center;
+  }
+
+  .hero__title {
+    margin-bottom: 48px;
+    font-size: clamp(38px, 10vw, 54px);
+    line-height: 1.08;
+  }
+
   .hero__text {
-    max-width: 88%;
+    margin-bottom: 48px;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .manager-card {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .manager-card__top {
+    align-items: flex-start;
+  }
+
+  .manager-card__photo {
+    width: 64px;
+    height: 64px;
+    flex-basis: 64px;
+  }
+
+  .manager-card__name {
+    font-size: 18px;
+  }
+
+  .messengers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .messenger {
+    min-width: 0;
+    padding: 12px 8px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 580px) {
+  .hero__content {
+    padding-top: 20px;
+  }
+
+  .hero__title {
+    font-size: clamp(28px, 5.5vw, 48px);
+  }
+
   .hero__visual img {
     object-position: 72% center;
   }
 
-  .hero__visual::after {
-    background:
-      linear-gradient(90deg,
-        rgba(5, 39, 92, 0.98) 0%,
-        rgba(5, 39, 92, 0.94) 50%,
-        rgba(5, 39, 92, 0.64) 72%,
-        rgba(5, 39, 92, 0.26) 100%),
-      linear-gradient(0deg,
-        rgba(5, 39, 92, 0.75) 0%,
-        transparent 40%);
+  .manager-card {
+    max-width: 480px;
+    padding: 0;
+    background: rgba(255, 255, 255, 0);
   }
 
-  .hero__title,
-  .hero__text {
-    max-width: 100%;
+  .manager-card__top {
+    gap: 12px;
   }
-}
 
-@media (prefers-reduced-motion: reduce) {
-  .hero__visual img {
-    transform: none !important;
-    will-change: auto;
+  .manager-card__role {
+    font-size: 16px;
+    margin: 0;
+    color: var(--color-white);
+  }
+
+  .manager-card__phone {
+    font-size: 24px;
+    color: var(--color-white);
+  }
+
+  .messengers {
+    grid-template-columns: 1fr;
+  }
+
+  .messenger {
+    min-height: 50px;
+    justify-content: flex-start;
+    padding-inline: 20px;
   }
 }
