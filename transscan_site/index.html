@@ -22,14 +22,15 @@
         <a class="main-nav__link is-active" href="#top">Главная</a>
         <a class="main-nav__link" href="#services">Услуги</a>
 
-        <a class="main-nav__link" href="#partners">Партнеры</a>
-        <a class="main-nav__link" href="#reviews">Отзывы</a>
+        <!-- <a class="main-nav__link" href="#partners">Партнеры</a>
+        <a class="main-nav__link" href="#reviews">Отзывы</a> -->
         <a class="main-nav__link" href="#contacts">Контакты</a>
       </nav>
 
       <div class="header__actions">
         <button class="btn btn--orange btn--compact js-open-calc" type="button">
-          <span>Связаться с нами</span>
+          <i class="iv fa-solid fa-table"></i>
+          <span>Запросить расчет</span>
           <span aria-hidden="true">→</span>
         </button>
 
@@ -50,7 +51,7 @@
 
       <div class="container hero__container">
         <div class="hero__content">
-          <p class="eyebrow eyebrow--light">Контейнерные перевозки</p>
+          <!-- <p class="eyebrow eyebrow--light">Контейнерные перевозки</p> -->
 
           <h1 class="hero__title" id="hero-title">
             Контейнерные перевозки<br>
@@ -68,8 +69,8 @@
             <div class="manager-card__top">
               <img class="manager-card__photo" src="img/stanislav-grigorenko.jpg" alt="Станислав Григоренко">
               <div>
-                <h2 class="manager-card__name">Станислав Григоренко</h2>
-                <p class="manager-card__role">Логистический менеджер</p>
+                <!-- <h2 class="manager-card__name">Станислав Григоренко</h2> -->
+                <h2 class="manager-card__role">Логистический менеджер</h2>
                 <a class="manager-card__phone" href="tel:+79313299890">
                   тел.:&nbsp;+7&nbsp;(931) 329-98-90
                 </a>
@@ -77,7 +78,7 @@
             </div>
 
             <button class="btn btn--orange btn--wide js-open-calc" type="button">
-              <span class="btn__icon" aria-hidden="true">▦</span>
+              <i class="iv fa-solid fa-table"></i>
               <span>Запросить расчет</span>
               <span class="btn__arrow" aria-hidden="true">→</span>
             </button>
@@ -144,8 +145,8 @@
               <div class="service-card__image">
                 <img src="img/service-containers.png" alt="">
               </div>
-              <h3>Перемещение и размещение груженых контейнеров</h3>
-              <p>На терминалах Москвы и Московской области.</p>
+              <h3>Перемещение и размещение</h3>
+              <p>Работаем с гружёными и порожними контейнерами на терминалах Москвы и Московской области.</p>
             </a>
           </article>
 
@@ -178,7 +179,7 @@
       </div>
     </section>
 
-    <section class="section section--white" id="partners" aria-labelledby="partners-title">
+    <!-- <section class="section section--white" id="partners" aria-labelledby="partners-title">
       <div class="container">
         <div class="section-heading section-heading--split">
           <div>
@@ -265,10 +266,86 @@
           </article>
         </div>
       </div>
+    </section> -->
+
+    <section class="section contacts-section" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+
+        <div class="section-heading contacts-section__heading">
+          <div>
+            <p class="eyebrow">Контакты</p>
+            <h2 id="contacts-title">Как нас найти</h2>
+          </div>
+
+          <p class="section-heading__lead">
+            Свяжитесь с нами по телефону или приезжайте в офис.
+          </p>
+        </div>
+
+        <div class="contacts-grid">
+
+          <div class="contacts-card">
+
+            <div class="contacts-card__item">
+              <div class="contacts-card__icon">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              </div>
+
+              <div>
+                <h3>Адрес</h3>
+
+                <address>
+                  198095, г. Санкт-Петербург,<br>
+                  ул. Розенштейна, д. 21, лит. А,<br>
+                  пом. 103-Н, ком. 18
+                </address>
+              </div>
+            </div>
+
+            <div class="contacts-card__item">
+              <div class="contacts-card__icon">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              </div>
+
+              <div>
+                <h3>Телефон</h3>
+
+                <a class="contacts-card__phone" href="tel:+78127513351">
+                  +7 (812) 751-33-51
+                </a>
+              </div>
+            </div>
+
+            <div class="contacts-card__actions">
+
+              <a class="btn btn--orange" href="tel:+78127513351">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <span>Позвонить</span>
+              </a>
+
+              <a class="btn btn--outline"
+                href="https://yandex.ru/maps/?text=198095%2C%20%D0%B3.%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB.%20%D0%A0%D0%BE%D0%B7%D0%B5%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%D0%B0%2C%20%D0%B4.%2021%2C%20%D0%BB%D0%B8%D1%82.%20%D0%90"
+                target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+                <span>Открыть карту</span>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="contacts-map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?text=198095%2C%20%D0%B3.%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB.%20%D0%A0%D0%BE%D0%B7%D0%B5%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%D0%B0%2C%20%D0%B4.%2021%2C%20%D0%BB%D0%B8%D1%82.%20%D0%90&z=16"
+              width="100%" height="100%" frameborder="0" allowfullscreen loading="lazy" title="Трансскан на карте">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer" id="contacts">
+  <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand" id="about">
         <img src="img/logo-footer.svg" alt="Трансскан, группа компаний">
@@ -282,9 +359,23 @@
       <div class="footer-column">
         <h2>Контакты</h2>
         <address>
-          <p>Санкт-Петербург, ул. Шоссейная, д. 1<br>БЦ «МЕГА», офис 411</p>
-          <p><a href="tel:+78002000000">+7 800 200-00-00</a></p>
-          <p><a href="mailto:info@transscan.ru">info@transscan.ru</a></p>
+          <p>
+            198095, г. Санкт-Петербург,<br>
+            ул. Розенштейна, д. 21, лит. А,<br>
+            пом. 103-Н, ком. 18
+          </p>
+
+          <p>
+            <a href="tel:+78127513351">
+              +7 (812) 751-33-51
+            </a>
+          </p>
+
+          <p>
+            <a href="mailto:info@transscan.ru">
+              info@transscan.ru
+            </a>
+          </p>
         </address>
       </div>
 
@@ -309,6 +400,8 @@
         </ul>
       </div> -->
     </div>
+
+
   </footer>
 
   <div class="modal" id="calcModal" aria-hidden="true">

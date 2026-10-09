@@ -399,6 +399,7 @@ button {
   height: 72px;
   flex: 0 0 72px;
   border-radius: 50%;
+  border: 2px solid #fff;
   object-fit: cover;
 }
 
@@ -409,6 +410,7 @@ button {
 }
 
 .manager-card__role {
+  font-weight: 400;
   margin: 0 0 8px;
   color: var(--color-muted);
 }
@@ -1021,11 +1023,11 @@ button {
 
   .hero__content::after {
     right: -404px;
-    background: RGBA(0, 20, 50, 0.7);
+    background: RGBA(0, 20, 50, 0.6);
   }
 
   .hero__visual {
-    Left: 0;
+    Left: -72px;
   }
 
   .hero {
@@ -1036,13 +1038,13 @@ button {
   }
 
   .hero__title {
-    margin-bottom: 26px;
+    margin-bottom: 48px;
     font-size: clamp(38px, 10vw, 54px);
     line-height: 1.08;
   }
 
   .hero__text {
-    margin-bottom: 30px;
+    margin-bottom: 48px;
     font-size: 17px;
     line-height: 1.65;
   }
@@ -1159,7 +1161,7 @@ button {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   .container {
     width: calc(100% - 48px);
   }
@@ -1190,12 +1192,25 @@ button {
     margin: 0 0 16px;
   }
 
+  .manager-card {
+    max-width: 480px;
+    padding: 0px;
+    background: RGBA(255, 255, 255, 0);
+  }
+
   .manager-card__top {
     gap: 12px;
   }
 
+  .manager-card__role {
+    font-size: 16px;
+    margin: 0;
+    color: var(--color-white);
+  }
+
   .manager-card__phone {
-    font-size: 17px;
+    font-size: 24px;
+    color: var(--color-white);
   }
 
   .messengers {
@@ -1235,4 +1250,196 @@ button {
 .icon-max {
   width: 20px;
   height: 20px;
+}
+
+/* Contacts */
+
+.contacts-section {
+  background: var(--color-white);
+}
+
+.contacts-section__heading {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 520px);
+  gap: 48px;
+  align-items: end;
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: minmax(330px, 0.8fr) minmax(500px, 1.4fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.contacts-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  padding: 34px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  background: var(--color-light-blue);
+
+  box-shadow: var(--shadow-card);
+}
+
+.contacts-card__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.contacts-card__icon {
+  flex: 0 0 52px;
+
+  width: 52px;
+  height: 52px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 14px;
+
+  color: var(--color-white);
+  background: var(--color-blue);
+
+  font-size: 21px;
+
+  transition:
+    background var(--transition),
+    transform var(--transition);
+}
+
+.contacts-card__item:hover .contacts-card__icon {
+  background: var(--color-orange);
+  transform: translateY(-3px);
+}
+
+.contacts-card h3 {
+  margin: 0 0 8px;
+
+  color: var(--color-blue);
+
+  font-size: 20px;
+}
+
+.contacts-card address {
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-style: normal;
+
+  line-height: 1.65;
+}
+
+.contacts-card__phone {
+  color: var(--color-blue);
+
+  font-size: 22px;
+  font-weight: 700;
+
+  transition: color var(--transition);
+}
+
+.contacts-card__phone:hover {
+  color: var(--color-orange);
+}
+
+.contacts-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: auto;
+}
+
+.btn--outline {
+  color: var(--color-blue);
+
+  background: transparent;
+
+  border: 2px solid var(--color-blue);
+}
+
+.btn--outline:hover,
+.btn--outline:focus-visible {
+  color: var(--color-white);
+
+  background: var(--color-blue);
+
+  border-color: var(--color-blue);
+
+  box-shadow: 0 12px 24px rgba(8, 47, 107, 0.16);
+}
+
+.contacts-map {
+  min-height: 430px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  background: var(--color-light-blue);
+
+  box-shadow: var(--shadow-card);
+}
+
+.contacts-map iframe {
+  display: block;
+
+  width: 100%;
+  min-height: 430px;
+
+  border: 0;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .contacts-section__heading {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts-map,
+  .contacts-map iframe {
+    min-height: 380px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+  .contacts-card {
+    padding: 26px 22px;
+    gap: 28px;
+  }
+
+  .contacts-card__actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contacts-card__actions .btn {
+    width: 100%;
+  }
+
+  .contacts-map,
+  .contacts-map iframe {
+    min-height: 330px;
+  }
 }
