@@ -2792,22 +2792,11 @@ button {
 .service-modal__media img {
 
   display: block;
-
-
-
   width: 100%;
-
   max-width: 100%;
-
   max-height: 100%;
   min-height: 0;
-
-
-
   object-fit: contain;
-
-
-
   transition:
 
     opacity 180ms ease,
@@ -3236,9 +3225,7 @@ button {
   }
 
   .service-modal__media img {
-
-    max-height: 200px;
-
+    max-height: 160px;
   }
 
 
@@ -3308,9 +3295,7 @@ button {
 
 
   .service-modal__media img {
-
-    max-height: 180px;
-
+    max-height: 100px;
   }
 
 
