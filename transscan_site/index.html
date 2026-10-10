@@ -1,716 +1,365 @@
 <!doctype html>
-
 <html lang="ru">
 
-
-
 <head>
-
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta name="description"
     content="Трансскан — контейнерные перевозки, опасная химия, терминальные операции, склад временного хранения и документальное сопровождение перевозок.">
-
   <title>Трансскан — контейнерные перевозки</title>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
-
-
 <body>
-
   <header class="site-header">
-
     <div class="container header__inner">
-
       <a class="logo" href="#top" aria-label="Трансскан — на главную">
-
         <img src="img/logo.svg" alt="Трансскан, группа компаний">
-
       </a>
 
-
-
       <nav class="main-nav" id="mainNav" aria-label="Основная навигация">
-
         <a class="main-nav__link is-active" href="#top">Главная</a>
-
         <a class="main-nav__link" href="#services">Услуги</a>
-
         <a class="main-nav__link" href="#contacts">Контакты</a>
-
       </nav>
 
-
-
       <div class="header__actions">
-
         <button class="btn btn--orange btn--compact js-open-calc none" type="button">
-
           <i class="iv fa-solid fa-table"></i>
-
           <span>Запросить расчет</span>
-
           <span aria-hidden="true">→</span>
-
         </button>
-
-
 
         <button class="burger" id="burgerButton" type="button" aria-label="Открыть меню" aria-controls="mainNav"
           aria-expanded="false">
-
           <span></span><span></span><span></span>
-
         </button>
-
       </div>
-
     </div>
-
   </header>
 
-
-
   <main id="top">
-
     <section class="hero" aria-labelledby="hero-title">
-
       <div class="hero__visual" aria-hidden="true">
-
         <img src="img/hero-tank.jpg" alt="">
-
       </div>
 
-
-
       <div class="container hero__container">
-
         <div class="hero__content">
-
           <h1 class="hero__title" id="hero-title">
-
             Контейнерные перевозки<br>
-
             от&nbsp;обычных грузов<br>
-
             <span>до&nbsp;опасной химии<br>любого класса</span>
-
           </h1>
 
-
-
           <p class="hero__text">
-
             Осуществляем международные и внутрироссийские грузоперевозки.
-
             Полное документальное сопровождение, лицензии ADR и&nbsp;собственный
-
             парк специализированного транспорта.
-
           </p>
 
-
-
           <div class="manager-card">
-
             <div class="manager-card__top">
-
               <img class="manager-card__photo" src="img/stanislav-grigorenko.jpg" alt="Станислав Григоренко">
-
               <div>
-
                 <h2 class="manager-card__role">Консультант</h2>
-
                 <a class="manager-card__phone" href="tel:+79313299890">
-
                   тел.:&nbsp;+7&nbsp;(931) 329-98-90
-
                 </a>
-
+                <p class="manager-card__role">info@transscan.ru</p>
               </div>
-
             </div>
 
-
-
             <button class="btn btn--orange btn--wide js-open-calc" type="button">
-
               <i class="iv fa-solid fa-table"></i>
-
               <span>Запросить расчет</span>
-
               <span class="btn__arrow" aria-hidden="true">→</span>
-
             </button>
-
           </div>
 
-
-
           <div class="messengers" aria-label="Связь в мессенджерах">
-
             <a href="https://wa.me/79313299890?text=Здравствуйте%2C%20Станислав!%20Хочу%20уточнить%20стоимость%20перевозки."
               target="_blank" rel="noopener noreferrer" class="messenger messenger--whatsapp"
               aria-label="Написать Станиславу Григоренко в WhatsApp">
-
               <i class="fa-brands fa-whatsapp messenger__icon" aria-hidden="true"></i>
-
               <span>WhatsApp</span>
-
             </a>
-
-
 
             <a href="https://t.me/+79313299890" target="_blank" rel="noopener noreferrer"
               class="messenger messenger--telegram" aria-label="Написать Станиславу Григоренко в Telegram">
-
               <i class="fa-brands fa-telegram messenger__icon" aria-hidden="true"></i>
-
               <span>Telegram</span>
-
             </a>
-
-
 
             <a href="https://max.ru/368173606" target="_blank" rel="noopener noreferrer"
               class="messenger messenger--max" aria-label="Написать Станиславу Григоренко в MAX">
-
               <img class="messenger__icon icon-max" src="img/Max white.svg" alt="" aria-hidden="true">
-
               <span>MAX</span>
-
             </a>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
-
-
 
     <section class="section section--tinted" id="services" aria-labelledby="services-title">
-
       <div class="container">
-
         <div class="section-heading section-heading--split">
-
           <div>
-
             <p class="eyebrow">Наши услуги</p>
-
             <h2 id="services-title">Мы предлагаем</h2>
-
           </div>
-
           <p class="section-heading__lead">
-
             Комплексные логистические решения для перевозки опасных и обычных грузов.
-
             Гарантируем безопасность, соблюдение сроков и профессиональный подход.
-
           </p>
-
         </div>
-
-
 
         <div class="services-grid">
-
           <article class="service-card">
-
             <a class="service-card__link js-service-open" href="#serviceModal" data-service="transport"
               aria-haspopup="dialog" aria-label="Подробнее: Транспортные услуги">
-
               <div class="service-card__image">
-
                 <img src="img/service-transport.png" alt="Транспортные услуги">
-
               </div>
-
               <h3>Транспортные услуги</h3>
-
               <p>
-
                 Транспортировка опасных грузов в соответствии
-
                 с требованиями ADR, IMDG, RID.
-
               </p>
-
             </a>
-
           </article>
 
-
-
           <article class="service-card">
-
             <a class="service-card__link js-service-open" href="#serviceModal" data-service="containers"
               aria-haspopup="dialog" aria-label="Подробнее: Перемещение и размещение груженых контейнеров">
-
               <div class="service-card__image">
-
                 <img src="img/service-containers.png" alt="Перемещение и размещение контейнеров">
-
               </div>
-
               <h3>Перемещение и размещение</h3>
-
               <p>Работаем с гружёными и порожними контейнерами на терминалах Москвы и Московской области.</p>
-
             </a>
-
           </article>
 
-
-
           <article class="service-card">
-
             <a class="service-card__link js-service-open" href="#serviceModal" data-service="storage"
               aria-haspopup="dialog" aria-label="Подробнее: Склад временного хранения">
-
               <div class="service-card__image">
-
                 <img src="img/service-storage.png" alt="Склад временного хранения">
-
               </div>
-
               <h3>Склад временного хранения</h3>
-
               <p>
-
                 Временное хранение грузов на специализированных складах
-
                 с соблюдением всех требований безопасности.
-
               </p>
-
             </a>
-
           </article>
-
-
 
           <article class="service-card">
-
             <a class="service-card__link js-service-open" href="#serviceModal" data-service="documents"
               aria-haspopup="dialog" aria-label="Подробнее: Документальное сопровождение перевозок">
-
               <div class="service-card__image">
-
                 <img src="img/service-documents.png" alt="Документальное сопровождение">
-
               </div>
-
               <h3>Документальное сопровождение</h3>
-
               <p>
-
                 Полное логистическое сопровождение: подготовка маршрута,
-
                 контроль на всех этапах и взаимодействие с партнерами.
-
               </p>
-
             </a>
-
           </article>
-
         </div>
-
       </div>
-
     </section>
 
-
-
     <section class="section contacts-section" id="contacts" aria-labelledby="contacts-title">
-
       <div class="container">
-
         <div class="section-heading contacts-section__heading">
-
           <div>
-
             <p class="eyebrow">Контакты</p>
-
             <h2 id="contacts-title">Как нас найти</h2>
-
           </div>
 
-
-
           <p class="section-heading__lead">
-
             Свяжитесь с нами по телефону или приезжайте в офис.
-
           </p>
-
         </div>
 
-
-
         <div class="contacts-grid">
-
           <div class="contacts-card">
-
             <div class="contacts-card__item">
-
               <div class="contacts-card__icon">
-
                 <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-
               </div>
-
               <div>
-
                 <h3>Адрес</h3>
-
                 <address>
-
                   198095, г. Санкт-Петербург,<br>
-
                   ул. Розенштейна, д. 21, лит. А,<br>
-
                   пом. 103-Н, ком. 18
-
                 </address>
-
               </div>
-
             </div>
-
-
 
             <div class="contacts-card__item">
-
               <div class="contacts-card__icon">
-
                 <i class="fa-solid fa-phone" aria-hidden="true"></i>
-
               </div>
-
               <div>
-
                 <h3>Телефон</h3>
-
                 <a class="contacts-card__phone" href="tel:+78127513351">
-
                   +7 (812) 751-33-51
-
                 </a>
-
               </div>
-
             </div>
-
-
 
             <div class="contacts-card__actions">
-
               <a class="btn btn--orange" href="tel:+78127513351">
-
                 <i class="fa-solid fa-phone" aria-hidden="true"></i>
-
                 <span>Позвонить</span>
-
               </a>
-
-
 
               <a class="btn btn--outline"
                 href="https://yandex.ru/maps/?ll=30.288398%2C59.905691&z=17&pt=30.288398%2C59.905691%2Cpm2rdm&l=map"
                 target="_blank" rel="noopener noreferrer">
-
                 <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
-
                 <span>Открыть карту</span>
-
               </a>
-
             </div>
-
           </div>
 
-
-
           <div class="contacts-map">
-
             <iframe
               src="https://yandex.ru/map-widget/v1/?ll=30.288398%2C59.905691&z=17&pt=30.288398%2C59.905691%2Cpm2rdm&l=map"
               width="100%" height="100%" frameborder="0" allowfullscreen loading="lazy"
-              title="Трансскан — Санкт-Петербург, ул. Розенштейна, 21">
-
-            </iframe>
-
+              title="Трансскан — Санкт-Петербург, ул. Розенштейна, 21"></iframe>
           </div>
-
         </div>
-
       </div>
-
     </section>
-
   </main>
 
-
-
   <footer class="site-footer">
-
     <div class="container footer-grid">
-
       <div class="footer-brand" id="about">
-
         <img src="img/logo-footer.svg" alt="Трансскан, группа компаний">
-
         <p>
-
           Профессиональные решения в области транспортной логистики
-
           и перевозок химических грузов.
-
         </p>
-
         <small>© 2010–2024 ГК Трансскан. Все права защищены.</small>
-
       </div>
 
-
-
       <div class="footer-column">
-
         <h2>Контакты</h2>
-
         <address>
-
           <p>
-
             198095, г. Санкт-Петербург,<br>
-
             ул. Розенштейна, д. 21, лит. А,<br>
-
             пом. 103-Н, ком. 18
-
           </p>
-
           <p><a href="tel:+78127513351">+7 (812) 751-33-51</a></p>
-
           <p><a href="mailto:info@transscan.ru">info@transscan.ru</a></p>
-
         </address>
-
       </div>
-
-
 
       <div class="footer-column">
-
         <h2>Документация</h2>
-
         <ul>
-
           <!-- <li><a href="#">Лицензии и сертификаты</a></li> -->
-
           <li><a href="#">Политика безопасности</a></li>
-
           <li><a href="#">Реквизиты компании</a></li>
-
         </ul>
-
       </div>
-
     </div>
-
   </footer>
 
-
-
   <!-- Модальное окно: запрос расчёта -->
-
   <div class="modal" id="calcModal" aria-hidden="true">
-
     <div class="modal__backdrop js-close-modal"></div>
 
-
-
     <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="calc-title">
-
       <button class="modal__close js-close-modal" type="button" aria-label="Закрыть">×</button>
 
-
-
       <p class="eyebrow">Расчет перевозки</p>
-
       <h2 id="calc-title">Запросить расчет</h2>
 
-
-
       <form class="calc-form" id="calcForm">
-
         <input type="hidden" name="service" id="calcService" value="">
 
-
-
         <label>
-
           <span>Имя</span>
-
           <input type="text" name="name" required autocomplete="name">
-
         </label>
 
-
-
         <label>
-
           <span>Телефон</span>
-
           <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 (___) ___-__-__">
-
         </label>
 
-
-
         <label>
-
           <span>Маршрут / груз</span>
-
           <textarea name="message" rows="5"
             placeholder="Опишите маршрут, тип груза, контейнер и другие детали"></textarea>
-
         </label>
 
-
-
         <button class="btn btn--orange btn--wide" type="submit">
-
           Отправить заявку
-
           <span aria-hidden="true">→</span>
-
         </button>
 
-
-
         <p class="form-note">
-
           Нажимая кнопку, вы соглашаетесь на обработку персональных данных.
-
         </p>
-
       </form>
-
     </div>
-
   </div>
-
-
 
   <!-- Модальное окно: услуги -->
-
   <div class="service-modal" id="serviceModal" aria-hidden="true">
-
     <div class="service-modal__backdrop js-close-service-modal"></div>
 
-
-
     <div class="service-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="serviceModalTitle">
-
       <button class="service-modal__close js-close-service-modal" type="button" aria-label="Закрыть">×</button>
 
-
-
       <div class="service-modal__media">
-
         <img id="serviceModalImage" src="" alt="">
-
         <div class="service-modal__actions">
           <div class="service-modal__navigation">
-
             <button class="service-modal__nav service-modal__nav--prev" id="servicePrev" type="button">
-
               <i class="fa-solid fa-arrow-left"></i>
-
               <span>Предыдущая</span>
-
             </button>
-
-
 
             <button class="service-modal__nav service-modal__nav--next" id="serviceNext" type="button">
-
               <span>Следующая</span>
-
               <i class="fa-solid fa-arrow-right"></i>
-
             </button>
-
           </div>
           <button class="btn btn--orange btn--wide js-service-request" type="button">
-
             <i class="fa-solid fa-table"></i>
-
             <span>Запросить расчет</span>
-
             <span class="btn__arrow">→</span>
-
           </button>
         </div>
-
       </div>
-
-
 
       <div class="service-modal__content">
-
         <div class="service-modal__top">
-
           <p class="eyebrow">Наши услуги</p>
-
           <span class="service-modal__counter" id="serviceModalCounter">1 / 4</span>
-
         </div>
 
-
-
         <h2 id="serviceModalTitle"></h2>
-
         <p class="service-modal__description" id="serviceModalDescription"></p>
 
-
-
         <h3 class="service-modal__benefits-title">Что получает клиент</h3>
-
         <ul class="service-modal__benefits" id="serviceModalBenefits"></ul>
-
-
-
-
-
-
-
       </div>
-
     </div>
-
   </div>
 
-
-
   <script src="js/script.js"></script>
-
 </body>
-
-
 
 </html>
